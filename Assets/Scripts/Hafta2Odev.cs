@@ -71,6 +71,6 @@ public class Hafta2Odev : MonoBehaviour
 
     void Start()
     {
-        BolenleriBul(6, 77);
+        BolenleriBul(82, 201);
     }
 }
