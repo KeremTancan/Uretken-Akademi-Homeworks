@@ -6,15 +6,11 @@ public class SunMovement : MonoBehaviour
 {
     
     public float movementSpeed = 5f;
-    public float rotationSpeed = 50f;
   
   
     void Update()
-    {
-        
-        transform.Translate(Vector3.forward * movementSpeed * Time.deltaTime);
-        
-
+    { 
+        transform.Translate(Vector3.forward * movementSpeed * Time.deltaTime); //güneþin evrende düz ilerlemesi
     }
 }
 
