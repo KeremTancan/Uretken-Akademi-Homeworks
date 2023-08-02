@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Hafta1odev.unity
     guid: 130de191e9bf7de41a659f68e5741ed0
+  - enabled: 1
+    path: Assets/Scenes/Hafta4odev.unity
+    guid: 9415b48e9efc8a746a96c2b1470e9fd9
   m_configObjects: {}
