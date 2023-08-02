@@ -7,6 +7,7 @@ public class ButtonScript : MonoBehaviour
 {
    public void RestartScene()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(1); // kazanma ekranýndaki butonun sahneyi yeniden baþlatmasý
+        
     }
 }

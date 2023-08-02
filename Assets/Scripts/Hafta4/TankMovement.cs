@@ -16,18 +16,19 @@ public class TankMovement : MonoBehaviour
 
     private void Update()
     {
-       
+       //Tankýn hareket etme kodlarý (Dönme ve ilerleme)
         
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
         Vector3 movement = transform.forward * verticalInput * speed * Time.deltaTime;
         Quaternion rotation = Quaternion.Euler(0f, horizontalInput * rotationSpeed * Time.deltaTime, 0f);
-             
-        
-        carRigidbody.MoveRotation(carRigidbody.rotation * rotation);
 
+        var magnitude = new Vector2(horizontalInput, verticalInput).magnitude;
+        SoundManager.Instance.SetVolume(magnitude);
+     
         
+        carRigidbody.MoveRotation(carRigidbody.rotation * rotation);     
         carRigidbody.MovePosition(carRigidbody.position + movement);
     }
 }
