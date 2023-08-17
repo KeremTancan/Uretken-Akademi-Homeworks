@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Erkek
+  - "Kad\u0131n"
   layers:
   - Default
   - TransparentFX
